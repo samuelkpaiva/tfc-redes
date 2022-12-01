@@ -1,0 +1,11 @@
+---
+- name: TFD
+  hosts: VM-local
+  connection: local
+  become: true
+  
+  tasks:
+    - name: Install aptitude using apt
+      apt: docker-ce, docker-compose
+
+  
